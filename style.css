@@ -1,0 +1,140 @@
+* {
+box-sizing: border-box;
+margin: 0;
+padding: 0;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #3b2416, #8b5a2b);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 30px;
+}
+
+.container {
+    width: 100%;
+    max-width: 850px;
+    background: #fff;
+    border-radius: 18px;
+    overflow: hidden;
+    box-shadow: 0 12px 35px rgba(0, 0, 0, 0.25);
+}
+
+.cabecalho {
+    background: #4b2e1f;
+    color: white;
+    padding: 30px;
+    text-align: center;
+}
+
+.cabecalho h1 {
+    margin-bottom: 8px;
+}
+
+.cabecalho p {
+    color: #ead8c7;
+}
+
+.conteudo {
+    padding: 30px;
+}
+
+.promocao {
+    background: #f6efe8;
+    border-left: 5px solid #9a642f;
+    padding: 18px;
+    margin-bottom: 25px;
+    border-radius: 8px;
+}
+
+.promocao h2 {
+    color: #4b2e1f;
+    margin-bottom: 10px;
+}
+
+.promocao p {
+    line-height: 1.6;
+}
+
+form {
+    display: grid;
+    gap: 18px;
+}
+
+label {
+    font-weight: bold;
+    color: #4b2e1f;
+    margin-bottom: 6px;
+    display: block;
+}
+
+input, select {
+    width: 100%;
+    padding: 13px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    font-size: 16px;
+}
+
+input:focus, select:focus {
+    outline: none;
+    border-color: #9a642f;
+}
+
+button {
+    border: none;
+    padding: 14px;
+    border-radius: 8px;
+    background: #9a642f;
+    color: white;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+button:hover {
+    background: #75481f;
+}
+
+.mensagem {
+    margin-top: 25px;
+    padding: 16px;
+    border-radius: 8px;
+    line-height: 1.6;
+}
+
+.sucesso {
+    background: #e8f5e9;
+    color: #216b2a;
+    border: 1px solid #a5d6a7;
+}
+
+.erro {
+    background: #ffebee;
+    color: #a3222d;
+    border: 1px solid #ef9a9a;
+}
+
+.rodape {
+    text-align: center;
+    color: #777;
+    font-size: 13px;
+    padding: 0 30px 25px;
+}
+
+@media (max-width: 600px) {
+    body {
+        padding: 15px;
+    }
+
+    .conteudo {
+        padding: 20px;
+    }
+
+    .cabecalho {
+        padding: 25px 20px;
+    }
+}
